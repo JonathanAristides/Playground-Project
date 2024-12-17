@@ -10,7 +10,7 @@
             list-style-type: none;
             display: flex;
             gap: var(--margin-medium);
-            flex-wrap: wrap;
+            overflow: scroll;
         }
 
         .welcome__tag-list {
