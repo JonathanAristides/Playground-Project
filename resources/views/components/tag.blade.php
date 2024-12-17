@@ -1,4 +1,4 @@
-@props(['size' => 'normal'])
+@props(['tag', 'size' => 'normal'])
 
 @php
     $classes = 'tag__list-item';
@@ -16,5 +16,5 @@
 @endphp
 
 <li class="{{$classes}}">
-    <a class="tag__list-item-link" href="#">{{$slot}}</a>
+    <a class="tag__list-item-link" href="'#">{{$tag->name}}</a>
 </li>

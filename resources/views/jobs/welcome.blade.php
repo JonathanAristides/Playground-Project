@@ -11,9 +11,9 @@
             </div>
 
             <ul class="welcome__job-cards">
-                <x-job-card class="welcome__job-card"></x-job-card>
-                <x-job-card class="welcome__job-card"></x-job-card>
-                <x-job-card class="welcome__job-card"></x-job-card>
+                @foreach($jobs as $job)
+                    <x-job-card :job="$job" class="welcome__job-card"></x-job-card>
+                @endforeach
             </ul>
         </section>
 
@@ -23,9 +23,9 @@
             </div>
 
             <ul class="welcome__tag-list">
-                <x-tag size='large'>Backend</x-tag>
-                <x-tag size='large'>Frontend</x-tag>
-                <x-tag size='large'>Fullstack</x-tag>
+                @foreach($tags as $tag)
+                    <x-tag :tag="$tag"/>
+                @endforeach
             </ul>
         </section>
 
@@ -35,9 +35,9 @@
             </div>
 
             <ul class="welcome__job-cards-wide">
-                <x-job-card-wide></x-job-card-wide>
-                <x-job-card-wide></x-job-card-wide>
-                <x-job-card-wide></x-job-card-wide>
+                @foreach($jobs as $job)
+                    <x-job-card-wide :job="$job"></x-job-card-wide>
+                @endforeach
             </ul>
         </section>
     </section>

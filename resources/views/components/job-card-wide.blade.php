@@ -1,3 +1,5 @@
+@props(['job'])
+
 <li class="job-card-wide">
     <section class="job-card-wide__section">
         <x-employer-logo :width="150"></x-employer-logo>
@@ -11,9 +13,9 @@
 
         <div class="job-card-wide__tags">
             <ul class="job-card-wide__tag-list">
-                <x-tag size='normal'>Backend</x-tag>
-                <x-tag size='normal'>Frontend</x-tag>
-                <x-tag size='normal'>Fullstack</x-tag>
+                @foreach($job->tags as $tag)
+                    <x-tag :$tag/>
+                @endforeach
             </ul>
         </div>
     </section>

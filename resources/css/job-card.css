@@ -45,7 +45,8 @@
 
             .job-card__salary {
                 font-size: var(--font-size-regular);
-                font-weight: var(--font-medium);
+                font-weight: var(--font-light);
+                color: var(--orange-web);
             }
 
             .job-card__location {
