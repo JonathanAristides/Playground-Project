@@ -1,3 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "welcome.css";
+@import "layout.css";
+@import "job-card.css";
+@import "section-heading.css";
+@import "tag.css";
+@import "job-card-wide.css";
+@import "employer-logo.css";
+@import "search-form.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: var(--background-color);
+}
+
+main {
+    padding: var(--navigation-height) var(--main-side-padding) var(--footer-height) var(--main-side-padding);
+}
+
+:root {
+    --primary-color: #000000; /* Blue */
+    --secondary-color: #1544EF; /* Green */
+    --accent-color: #e74c3c; /* Red */
+    --background-color: #111111; /* Light Gray */
+    --orange-web: #faa916ff;
+    --white: #fbfffeff;
+    --dim-gray: #181818;
+    --eerie-black: #212125;
+    --tag-background: #424242;
+    --carmine: #96031aff;
+
+    --font-family: "Lato", sans-serif;
+    --font-thin: 100;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --border-radius-small: 10px;
+    --border-radius-medium: 15px;
+    --border-radius-large: 20px;
+
+    --font-size-tiny: 0.75rem;
+    --font-size-small: 1rem;
+    --font-size-regular: 1.25rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+
+    --padding-tiny: 7px;
+    --padding-small: 10px;
+    --padding-regular: 15px;
+    --padding-medium: 20px;
+    --padding-large: 30px;
+
+    --margin-small: 10px;
+    --margin-medium: 20px;
+    --margin-large: 30px;
+    --margin-xlarge: 40px;
+
+    --navigation-height: 75px;
+    --main-side-padding: 20px;
+    --footer-height: 0px;
+}
+
+
+
+

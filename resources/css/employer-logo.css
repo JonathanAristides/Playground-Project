@@ -1,0 +1,4 @@
+.employer-logo__image {
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+}

@@ -1,0 +1,35 @@
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .welcome__section-container {
+        display: grid;
+        margin-top: var(--margin-large);
+
+        .welcome__job-cards {
+            list-style-type: none;
+            display: flex;
+            gap: var(--margin-medium);
+            flex-wrap: wrap;
+        }
+
+        .welcome__tag-list {
+            list-style-type: none;
+            display: flex;
+            gap: var(--margin-medium);
+            flex-wrap: wrap;
+        }
+
+        .welcome__job-cards-wide {
+            list-style-type: none;
+            display: flex;
+            gap: var(--margin-medium);
+            flex-wrap: wrap;
+
+            @media all and (min-width: 768px) {
+                display:grid;
+                grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            }
+        }
+    }
+}

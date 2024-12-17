@@ -1,0 +1,60 @@
+.job-card-wide {
+    color: var(--white);
+    font-family: var(--font-family), sans-serif;
+
+    width: 100%;
+
+    .job-card-wide__section {
+        border-radius: var(--border-radius-medium);
+        font-size: var(--font-size-small);
+        transition: background 0.3s;
+        background: var(--dim-gray);
+        padding: var(--padding-medium);
+
+        &:hover {
+            background: var(--eerie-black);
+        }
+
+        display: flex;
+        gap: 20px;
+
+        .job-card-wide__job-details {
+            display: grid;
+            align-content: space-evenly;
+
+            .job-card-wide__job-employer-name {
+                font-size: var(--font-size-small);
+                font-weight: var(--font-thin);
+            }
+
+            .job-card-wide__job-name {
+                font-size: var(--font-size-regular);
+                font-weight: var(--font-medium);
+            }
+
+            .job-card-wide__salary {
+                font-size: var(--font-size-regular);
+                font-weight: var(--font-medium);
+            }
+
+            .job-card-wide__location {
+                font-size: var(--font-size-small);
+                font-weight: var(--font-thin);
+            }
+        }
+
+        .job-card-wide__tags {
+            display: flex;
+            align-self: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+
+            .job-card-wide__tag-list {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+}
