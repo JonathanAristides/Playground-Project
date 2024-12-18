@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <section>
+    <section id="app">
         <header class="navigation">
             <div class="navigation__logo-container">
                 <a class="navigation__logo-link" href="/">

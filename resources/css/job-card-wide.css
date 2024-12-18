@@ -35,6 +35,7 @@
             .job-card-wide__salary {
                 font-size: var(--font-size-regular);
                 font-weight: var(--font-medium);
+                color: var(--orange-web);
             }
 
             .job-card-wide__location {

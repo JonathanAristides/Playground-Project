@@ -1,6 +1,7 @@
 <x-layout>
     <section class="welcome-container">
 
+
         <section class="welcome__section-container">
             <x-search-form></x-search-form>
         </section>
