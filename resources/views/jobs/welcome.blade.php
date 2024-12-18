@@ -12,7 +12,7 @@
             </div>
 
             <ul class="welcome__job-cards">
-                @foreach($jobs as $job)
+                @foreach($featuredJobs as $job)
                     <x-job-card :job="$job" class="welcome__job-card"></x-job-card>
                 @endforeach
             </ul>
