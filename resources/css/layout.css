@@ -9,9 +9,7 @@
     padding: 10px;
 
     display: flex;
-    align-content: center;
-    text-align: center;
-    gap: 20px;
+    gap: var(--margin-medium);
 
     &::after {
         content: '';
@@ -25,16 +23,38 @@
     }
 
     .navigation__logo-container {
+        margin-left: var(--margin-small);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .navigation__logo-link {
-            display: block;
-            padding: 10px;
+            display: flex;
+            padding: var(--padding-tiny);
 
             border-radius: var(--border-radius-small);
             transition: background 0.3s;
 
             &:hover {
                 background: var(--dim-gray);
+
+                .navigation__logo {
+                    background: var(--dim-gray);
+                }
             }
+
+            .navigation__logo {
+                transition: background 0.3s;
+                align-self: center;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                background: var(--white);
+                padding: var(--padding-tiny);
+                border-radius: 50%;
+            }
+
+
         }
     }
 

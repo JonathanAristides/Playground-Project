@@ -3,4 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 
-Route::get('/', [JobController::class, 'index']);
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/job-board', [JobController::class, 'index']);

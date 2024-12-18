@@ -19,9 +19,9 @@ export default defineComponent({
 <template>
     {{ count }}
 
-    <button @click="increment">
-        Add
-    </button>
+    <v-btn variant="elevated" @click="increment">
+        Vuetify Button
+    </v-btn>
 </template>
 
 <style scoped>

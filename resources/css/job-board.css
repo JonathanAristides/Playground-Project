@@ -1,26 +1,26 @@
-.welcome-container {
+.job-board-container {
     display: grid;
     grid-template-columns: 1fr;
 
-    .welcome__section-container {
+    .job-board__section-container {
         display: grid;
         margin-top: var(--margin-large);
 
-        .welcome__job-cards {
+        .job-board__job-cards {
             list-style-type: none;
             display: flex;
             gap: var(--margin-medium);
             overflow: scroll;
         }
 
-        .welcome__tag-list {
+        .job-board__tag-list {
             list-style-type: none;
             display: flex;
             gap: var(--margin-medium);
             flex-wrap: wrap;
         }
 
-        .welcome__job-cards-wide {
+        .job-board__job-cards-wide {
             list-style-type: none;
             display: flex;
             gap: var(--margin-medium);

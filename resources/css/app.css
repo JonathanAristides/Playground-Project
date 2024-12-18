@@ -1,4 +1,4 @@
-@import "welcome.css";
+@import "job-board.css";
 @import "layout.css";
 @import "job-card.css";
 @import "section-heading.css";
@@ -25,6 +25,7 @@ main {
 :root {
     --primary-color: #000000; /* Blue */
     --secondary-color: #1544EF; /* Green */
+    --secondary-color-rgba: rgba(21, 68, 239, 0.3);
     --accent-color: #e74c3c; /* Red */
     --background-color: #111111; /* Light Gray */
     --orange-web: #9f7c3c;
