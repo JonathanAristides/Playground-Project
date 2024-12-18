@@ -5,7 +5,7 @@
 
         <div class="job-card__job-details">
             <div class="job-card__employer">
-                <x-employer-logo :width="50"></x-employer-logo>
+                <x-job-board.employer-logo :width="50"></x-employer-logo>
                 <p class="job-card__employer-name">{{ $job->employer->name }}</p>
             </div>
             <p class="job-card__job-name">{{ $job->title }}</p>
@@ -16,7 +16,7 @@
         <div class="job-card__tags">
             <ul class="job-card__tag-list">
                 @foreach($job->tags as $tag)
-                    <x-tag :tag="$tag"/>
+                    <x-job-board.tag :tag="$tag"/>
                 @endforeach
             </ul>
         </div>

@@ -2,7 +2,7 @@
 
 <li class="job-card-wide">
     <section class="job-card-wide__section">
-        <x-employer-logo :width="150"></x-employer-logo>
+        <x-job-board.employer-logo :width="150"></x-job-board.employer-logo>
 
         <div class="job-card-wide__job-details">
             <a class="job-card-wide__job-employer-name">{{$job->employer->name}}</a>
@@ -14,7 +14,7 @@
         <div class="job-card-wide__tags">
             <ul class="job-card-wide__tag-list">
                 @foreach($job->tags as $tag)
-                    <x-tag :$tag/>
+                    <x-job-board.tag :$tag/>
                 @endforeach
             </ul>
         </div>
