@@ -16,5 +16,5 @@
 @endphp
 
 <li class="{{$classes}}">
-    <a class="tag__list-item-link" href="'#">{{$tag->name}}</a>
+    <a class="tag__list-item-link" href="{{ url('tags/' . $tag->name) }}">{{$tag->name}}</a>
 </li>

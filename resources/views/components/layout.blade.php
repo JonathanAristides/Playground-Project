@@ -15,22 +15,19 @@
     <section id="app">
         <header class="navigation">
             <div class="navigation__logo-container">
-                <a class="navigation__logo-link" href="/">
+                <a class="navigation__logo-link" href="/job-board">
                     <img class="navigation__logo" src="{{ Vite::asset('resources/images/house.svg') }}" alt="Logo">
                 </a>
             </div>
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="/job-board">Jobs</a>
-                    </li>
                     @auth
                         <li class="navigation__item">
                             <a class="navigation__link" href="/jobs/create">Post a Job</a>
                         </li>
                         <li class="navigation__item">
-{{--                            <a class="navigation__link" href="/logout" method="Delete">Logout</a>--}}
+                            {{--                            <a class="navigation__link" href="/logout" method="Delete">Logout</a>--}}
                         </li>
                     @endauth
 

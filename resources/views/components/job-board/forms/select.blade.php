@@ -8,9 +8,9 @@
     ];
 @endphp
 
-<x-forms.field :$label :$name>
+<x-job-board.forms.field :$label :$name>
     <select {{ $attributes($defaults) }}>
         {{ $slot }}
     </select>
-</x-forms.field>
+</x-job-board.forms.field>
 

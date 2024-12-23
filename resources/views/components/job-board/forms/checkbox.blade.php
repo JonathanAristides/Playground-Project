@@ -9,10 +9,10 @@
     ];
 @endphp
 
-<x-forms.field :$label :$name>
+<x-job-board.forms.field :$label :$name>
     <div class="">
         <input {{ $attributes($defaults) }}>
         <span class="">{{ $label }}</span>
     </div>
-</x-forms.field>
+</x-job-board.forms.field>
 
