@@ -23,8 +23,25 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation__link" href="/job-board">Job Board</a>
+                        <a class="navigation__link" href="/job-board">Jobs</a>
                     </li>
+                    @auth
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/jobs/create">Post a Job</a>
+                        </li>
+                        <li class="navigation__item">
+{{--                            <a class="navigation__link" href="/logout" method="Delete">Logout</a>--}}
+                        </li>
+                    @endauth
+
+                    @guest
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/register">Sign Up</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/login">Login</a>
+                        </li>
+                    @endguest
                 </ul>
             </nav>
         </header>

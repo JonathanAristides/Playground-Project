@@ -2,7 +2,12 @@
     <section class="job-board-container">
 
         <section class="job-board__section-container">
-            <x-job-board.search-form></x-job-board.search-form>
+            {{--            <x-job-board.search-form></x-job-board.search-form>--}}
+            <x-job-board.forms.form action="/search">
+                <x-job-board.forms.input :label="false" name="q" placeholder="Find a Job...">
+                </x-job-board.forms.input>
+            </x-job-board.forms.form>
+
         </section>
 
         <section class="job-board__section-container">

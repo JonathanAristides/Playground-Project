@@ -16,6 +16,19 @@
 body {
     height: 100vh;
     background: var(--background-color);
+
+    label {
+        color: var(--white);
+    }
+
+    input {
+        background: var(--white);
+        margin-bottom: 40px;
+    }
+
+    button {
+        background: var(--white);
+    }
 }
 
 main {
@@ -27,7 +40,7 @@ main {
     --secondary-color: #1544EF; /* Green */
     --secondary-color-rgba: rgba(21, 68, 239, 0.3);
     --accent-color: #e74c3c; /* Red */
-    --background-color: #111111; /* Light Gray */
+    --background-color: #8c8c8c; /* Light Gray */
     --orange-web: #9f7c3c;
     --white: #fbfffeff;
     --dim-gray: #181818;
@@ -69,5 +82,8 @@ main {
 }
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
