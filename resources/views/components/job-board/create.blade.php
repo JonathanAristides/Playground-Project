@@ -3,7 +3,6 @@
         <x-job-board.page-heading>Create new Job</x-job-board.page-heading>
 
         <x-job-board.forms.form method="POST" action="/jobs">
-
             <x-job-board.forms.input
                 label="Title"
                 name="title"
@@ -22,12 +21,6 @@
                 placeholder="Enter job salary">
             </x-job-board.forms.input>
 
-            <x-job-board.forms.input
-                label="Tags (comma separated)"
-                name="tags"
-                placeholder="Enter job tags">
-            </x-job-board.forms.input>
-
             <x-job-board.forms.select label="Schedule" name="schedule">
                 <option>Full Time</option>
                 <option>Part Time</option>
@@ -40,6 +33,12 @@
                 label="URL"
                 name="url"
                 placeholder="Enter job URL">
+            </x-job-board.forms.input>
+
+            <x-job-board.forms.input
+                label="Tags (comma separated)"
+                name="tags"
+                placeholder="Enter job tags">
             </x-job-board.forms.input>
 
             <x-job-board.forms.button>

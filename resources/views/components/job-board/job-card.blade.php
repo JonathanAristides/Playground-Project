@@ -5,10 +5,13 @@
 
         <div class="job-card__job-details">
             <div class="job-card__employer">
-                <x-job-board.employer-logo :width="50"></x-job-board.employer-logo>
+                <x-job-board.employer-logo :width="50" :employer="$job->employer"></x-job-board.employer-logo>
                 <p class="job-card__employer-name">{{ $job->employer->name }}</p>
             </div>
-            <p class="job-card__job-name">{{ $job->title }}</p>
+            <p class="job-card__job-name">
+                <a href="{{$job->url}}" target="_blank">
+                    {{ $job->title }}
+                </a>
             <p class="job-card__salary">{{ $job->salary }}</p>
             <p class="job-card__location">{{ $job->location }}</p>
         </div>

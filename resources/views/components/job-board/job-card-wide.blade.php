@@ -2,11 +2,13 @@
 
 <li class="job-card-wide">
     <section class="job-card-wide__section">
-        <x-job-board.employer-logo :width="150"></x-job-board.employer-logo>
+        <x-job-board.employer-logo :width="150" :employer="$job->employer"></x-job-board.employer-logo>
 
         <div class="job-card-wide__job-details">
             <a class="job-card-wide__job-employer-name">{{$job->employer->name}}</a>
-            <p class="job-card-wide__job-name">{{$job->title}}</p>
+            <a href="{{$job->url}}" target="_blank">
+                {{ $job->title }}
+            </a>
             <p class="job-card-wide__salary">{{$job->salary}}</p>
             <p class="job-card-wide__location">{{$job->location}}</p>
         </div>

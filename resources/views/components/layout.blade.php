@@ -27,7 +27,18 @@
                             <a class="navigation__link" href="/jobs/create">Post a Job</a>
                         </li>
                         <li class="navigation__item">
-                            {{--                            <a class="navigation__link" href="/logout" method="Delete">Logout</a>--}}
+
+                            <form
+                                action="/logout"
+                                method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button
+                                    class="navigation__link"
+                                >
+                                    Logout
+                                </button>
+                            </form>
                         </li>
                     @endauth
 
